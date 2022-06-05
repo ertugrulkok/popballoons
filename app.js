@@ -114,7 +114,7 @@ function getballoons() {
     const balloons = document.createElement("img");
     parent.appendChild(balloons);
     balloons.setAttribute("src",balloonArray [i].img)
-    balloons.addEventListener("click", popballoon);
+    balloons.addEventListener("mouseover", popballoon);
     console.log(balloons)
   }
 }
@@ -129,7 +129,7 @@ function popballoon() {
     var tom1 = new Audio('./images/pop.mp3');
     tom1.play();
     
-     this.removeEventListener("click", popballoon)
+     this.removeEventListener("mouseover", popballoon)
     allclicked.push(this);
    
     console.log(allclicked)
@@ -140,6 +140,7 @@ function popballoon() {
         cng.style.display = "block"
         document.getElementById("doneit").style.display="block"
         document.getElementById("doit").style.display="none"
+       document.getElementById("btn").style.display="block"
   
 
      }
