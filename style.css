@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.parent {
+ 
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.balloons {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.pops {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  z-index: +10;
+  border: 1px solid black;
+  
+}
+.pops::after {
+  content: "POP!!!";
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+h1{text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20;
+  font-size: 30px;
+ 
+}
+.cng{
+  width: 550px;
+  height: 100%;
+  display: none;
+  border-radius: 50px;
+  
+}
+
+  
+#doneit{
+  display: none;
+}
+img{
+  
+  width: 100px;
+  height: 120px;
+}
