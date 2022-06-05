@@ -13,15 +13,17 @@ body {
 }
 
 .wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ 
+  border: 1px solid black;
+  margin: auto;
 }
 .parent {
+  max-width: 500px;
+  position: relative;
+   display: flex;
+   align-items: center;
+  flex-wrap: wrap ;
  
-  display: grid;
-  width: 60%;
-  grid-template-columns: repeat(5, 1fr);
 }
 
 .balloons {
@@ -60,10 +62,12 @@ h1{text-align: center;
  
 }
 .cng{
-  width: 550px;
+  width: 100%;
   height: 100%;
   display: none;
   border-radius: 50px;
+  padding: 30px;
+  
   
 }
 
