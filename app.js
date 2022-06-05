@@ -128,8 +128,10 @@ function popballoon() {
     this.setAttribute("src" , "./images/popped.png")
     var tom1 = new Audio('./images/pop.mp3');
     tom1.play();
-    this.removeEventListener("click", popballoon)
+    
+     this.removeEventListener("click", popballoon)
     allclicked.push(this);
+   
     console.log(allclicked)
     if (allclicked.length === 25) {
 
@@ -141,10 +143,18 @@ function popballoon() {
   
 
      }
-    
+    }
 
-
-  
-
-}
 popballoon();
+
+
+
+
+
+
+
+
+
+
+
+
