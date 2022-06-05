@@ -126,7 +126,7 @@ function popballoon() {
  
     
     this.setAttribute("src" , "./images/popped.png")
-    var tom1 = new Audio('./images/lop.wav');
+    var tom1 = new Audio('./images/pop.wav');
     tom1.play();
     
     allclicked.push(this);
