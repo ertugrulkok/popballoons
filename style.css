@@ -16,6 +16,13 @@ body {
  
   border: 1px solid black;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 25px;
 }
 .parent {
   max-width: 500px;
@@ -79,4 +86,24 @@ img{
   
   width: 100px;
   height: 120px;
+  cursor: pointer;
+}
+button{
+  padding: 5px  20px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  background-image:url(./images/1.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+button:hover{
+  background-color: blueviolet;
+  transition: all 300ms;
+  color: white;
 }
